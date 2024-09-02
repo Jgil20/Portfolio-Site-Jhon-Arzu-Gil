@@ -3,18 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=5"/>
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 <meta name="author" content="Jhon Arzu-Gil">
 <meta name="copyright" content="Jhon Arzu-Gil" />
-<meta name="description" content="Explore the expertise of Jhon Arzu-Gil, an IBM Application Developer Specialist, offering custom web development, cloud computing solutions, and innovative software services. Specializing in full-stack development, cloud architecture, and digital transformation." />
-<meta name="keywords" content="Jhon Arzu-Gil, cloud computing, software development, web development, custom web solutions, full-stack development, cloud architecture, digital innovation, AWS, Azure, IBM Cloud" />
+<meta name="description" content="Explore the expertise of Jhon Arzu-Gil, an IBM Application Developer Specialist, offering custom web development, cloud computing solutions, and innovative software services. Specializing in full-stack development, cloud architecture, and digital transformation.">
 <meta name="facebook-domain-verification" content="u11bk0pa7paqrfnpckghid1sfk1je9" />
-<<!-- Open Graph / Facebook -->
-<meta property="og:site_name" content="Portfolio Site For Jhon Arzu-Gil">
+<!-- Open Graph / Facebook -->
+<meta property='og:site_name' content='Portfolio Site For Jhon Arzu-Gil'>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://arzugil.com">
 <meta property="og:title" content="Jhon Arzu-Gil">
-<meta property="og:description" content="Jhon Arzu-Gil is a Cloud Computing Specialist and Full-Stack Developer offering custom web solutions, software development, and cloud architecture expertise. Explore my portfolio and discover tailored tech solutions for your business needs.">
+<meta property="og:description" content="Explore the expertise of Jhon Arzu-Gil, an IBM Application Developer Specialist, offering custom web development, cloud computing solutions, and innovative software services. Specializing in full-stack development, cloud architecture, and digital transformation.">
 <meta property="og:image" content="https://www.arzugil.com/images/hackerJhon.png">
 
 <!-- Twitter -->
@@ -22,10 +21,10 @@
 <meta property="twitter:url" content="https://arzugil.com">
 <meta property="twitter:title" content="Jhon Arzu-Gil">
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:description" content="Jhon Arzu-Gil is a Cloud Computing Specialist and Full-Stack Developer offering custom web solutions, software development, and cloud architecture expertise. Explore my portfolio and discover tailored tech solutions for your business needs.">
+<meta property="twitter:description" content="Explore the expertise of Jhon Arzu-Gil, an IBM Application Developer Specialist, offering custom web development, cloud computing solutions, and innovative software services. Specializing in full-stack development, cloud architecture, and digital transformation.">
 <meta property="twitter:image" content="https://www.arzugil.com/images/hackerJhon.png">
-<meta name="twitter:image:alt" content="Jhon Arzu-Gil is a Cloud Computing Specialist and Full-Stack Developer offering custom web solutions, software development, and cloud architecture expertise.">
-
+<meta name="twitter:image:alt" content="Explore the expertise of Jhon Arzu-Gil, an IBM Application Developer Specialist, offering custom web development, cloud computing solutions, and innovative software services. Specializing in full-stack development, cloud architecture, and digital transformation."> 
+                                                                                                                                                                                                                                                                                                                                                                                                   
 <meta property='og:email' content='jgil20@me.com'>
 <meta property='og:phone_number' content='+1-248-938-5567'>
 <meta property='og:fax_number' content='+1-248-938-5567'>
@@ -39,7 +38,7 @@
 <meta property='og:country-name' content='USA'>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Portfolio Site Jhon Arzu-Gil">
+<meta name="apple-mobile-web-app-title" content="PWAGram">
 <meta name="msapplication-TileImage" content="/src/images/icons/app-icon-144x144.png">
 <meta name="msapplication-TileColor" content="#fff">
  <meta name="theme-color" content="#3f51b5">
@@ -55,8 +54,7 @@
   gtag('config', 'G-9V4BDEDHJV');
 </script>
 
-<title>Jhon Arzu-Gil | Cloud Computing Specialist & Full-Stack Developer | Custom Web Solutions</title>
-
+<title>Jhon Arzu-Gil | Cloud Computing Specialist & Full-Stack Developer | Custom Web Solutions </title>
 	
 	 <!-- Bootstrap Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
