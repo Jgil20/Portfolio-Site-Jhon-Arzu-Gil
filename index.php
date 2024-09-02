@@ -22,9 +22,9 @@
 <meta property="twitter:url" content="https://arzugil.com">
 <meta property="twitter:title" content="Jhon Arzu-Gil">
 <meta property="twitter:site" content="@JhonArzuGil">
-<meta property="twitter:description" content="<meta name="description" content="Jhon Arzu-Gil is a Cloud Computing Specialist and Full-Stack Developer offering custom web solutions, software development, and cloud architecture expertise. Explore my portfolio and discover tailored tech solutions for your business needs." />
+<meta property="twitter:description" content="Jhon Arzu-Gil is a Cloud Computing Specialist and Full-Stack Developer offering custom web solutions, software development, and cloud architecture expertise. Explore my portfolio and discover tailored tech solutions for your business needs.">
 <meta property="twitter:image" content="https://www.arzugil.com/images/hackerJhon.png">
-<meta name="twitter:image:alt" content="Jhon Arzu-Gil is a Cloud Computing Specialist and Full-Stack Developer offering custom web solutions, software development, and cloud architecture expertise. Explore my portfolio and discover tailored tech solutions for your business needs." />
+<meta name="twitter:image:alt" content="Jhon Arzu-Gil is a Cloud Computing Specialist and Full-Stack Developer offering custom web solutions, software development, and cloud architecture expertise.">
 
 <meta property='og:email' content='jgil20@me.com'>
 <meta property='og:phone_number' content='+1-248-938-5567'>
