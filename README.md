@@ -2,7 +2,7 @@
 
 Welcome to the repository for my personal portfolio site, [www.arzugil.com](https://www.arzugil.com). This project showcases my skills, projects, and professional journey in web development, cloud computing, and software engineering.
 
-![Portfolio Screenshot](assets/img/hackerJhon.png) <!-- Update with an actual screenshot -->
+![Portfolio Screenshot](/img/hackerJhon.png) <!-- Update with an actual screenshot -->
 
 ## Table of Contents
 - [About the Project](#about-the-project)
