@@ -1,0 +1,90 @@
+/*
+|----------------------------------------------------------------------------
+	Shiny Template Parallax CSS
+	Primary color: #1391a6
+|----------------------------------------------------------------------------
+*/
+
+/*
+|----------------------------------------------------------------------------
+| parallax
+|----------------------------------------------------------------------------
+*/
+.parallax::before {
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.parallax {
+	background-attachment: fixed;
+	background-color: rgba(0, 0, 0, 0.7);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+	position: relative;
+	color: #fff;
+}
+.parallax .container {
+    position: relative;
+}
+
+/*
+|----------------------------------------------------------------------------
+| SERVICE
+|----------------------------------------------------------------------------
+*/
+#service.parallax {
+    background-image: url("../images/background/computer%20clouds%20Jhon%20Gil.avif");
+}
+
+/*
+|----------------------------------------------------------------------------
+| PORTFOLIO
+|----------------------------------------------------------------------------
+*/
+#portfolio.parallax {
+    background-image: url("../images/background/computer%20clouds%20Jhon%20Gil.avif");
+}
+
+/*
+|----------------------------------------------------------------------------
+| QUOTE
+|----------------------------------------------------------------------------
+*/
+#quotes-section {
+    background-image: url("../images/background/computer%20clouds%20Jhon%20Gil.avif");
+}
+#quotes-section::before {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*
+|----------------------------------------------------------------------------
+| BLOG
+|----------------------------------------------------------------------------
+*/
+#blog.parallax {
+    background-image: url("../images/background/computer%20clouds%20Jhon%20Gil.avif");
+}
+
+/*
+|----------------------------------------------------------------------------
+| TESTIMONIAL
+|----------------------------------------------------------------------------
+*/
+#testimonials.parallax {
+    background-image: url("../images/background/computer%20clouds%20Jhon%20Gil.avif");
+}
+
+/*
+|----------------------------------------------------------------------------
+| success-story
+|----------------------------------------------------------------------------
+*/
+#success-story.parallax {
+    background-image: url("../images/background/computer%20clouds%20Jhon%20Gil.avif");
+}
