@@ -82,6 +82,7 @@ Portfolio-Site-Jhon-Arzu-Gil/
 │   └── ...
 ├── README.md
 └── ...
+'
 assets/: Contains all static files like CSS, JavaScript, and images.
 includes/: Contains reusable components like the header and footer.
 index.php: The main landing page of the portfolio.
