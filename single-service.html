@@ -275,7 +275,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare the email
-    $to = "youremail@example.com"; // Replace with your email address
+    $to = "Jhon@arzugil.com"; // Replace with your email address
     $subject = "New Quote Request from $fname";
     $message = "
     Name: $fname
@@ -305,7 +305,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     var formData = new FormData(this);
 
-    fetch('process_quote.php', {
+    fetch('contact-process.php', {
         method: 'POST',
         body: formData,
     })
@@ -325,7 +325,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		</div><!-- end container -->
 	</div>
 	<!-- end service-single-content -->
-	
+	<section id="comments" class="container mt-5">
+    <h3>💬 Comments</h3>
+    <form method="POST" action="#comments">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea class="form-control" name="comment" rows="4" required></textarea>
+        </div>
+        <button type="submit" name="submit_comment" class="btn btn-primary mt-2">Submit Comment</button>
+    </form>
+
+    <div class="mt-4">
+        <h4>Recent Comments</h4>
+        <?php
+        $result = $conn->query("SELECT name, comment, created_at FROM comments ORDER BY created_at DESC");
+        while ($row = $result->fetch_assoc()) {
+            echo '<div class="border p-3 mb-3">';
+            echo '<strong>' . htmlspecialchars($row['name']) . '</strong><br>';
+            echo '<small>' . $row['created_at'] . '</small><p>' . nl2br(htmlspecialchars($row['comment'])) . '</p>';
+            echo '</div>';
+        }
+        ?>
+    </div>
+</section>
+<!-- End Blog Comments Section -->
 	<!-- start footer -->
 	<footer id="footer" class="footer">
 		<div class="container">

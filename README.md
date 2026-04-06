@@ -1,97 +1,57 @@
-# Portfolio-Site-Jhon-Arzu-Gil
+# AI Chatbot Project Setup Guide
 
-Welcome to the repository for my personal portfolio site, [www.arzugil.com](https://www.arzugil.com). This project showcases my skills, projects, and professional journey in web development, cloud computing, and software engineering.
+If you encounter an error like "API key not valid. Please pass a valid API key." while using the Chatbot, follow these steps:
 
-![Portfolio Screenshot](/images/JhonArzuGilDP.jpeg) <!-- Update with an actual screenshot -->
+## Get Your free API Key
 
-## Table of Contents
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [File Structure](#file-structure)
-- [Contact](#contact)
-- [License](#license)
+1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey).
+2. Navigate to the API key section and create a new API key. It's free!
 
-## About the Project
+Your API key will look something like this: AIzaSyAtpnKGX13bTgmx0l_gQeatYvdWvY_wOTQ
 
-This portfolio site is designed to demonstrate my expertise in various aspects of web development, including frontend and backend development, cloud computing, and digital marketing. The site is built from scratch using HTML, CSS, JavaScript, and PHP, with plans to integrate a MySQL database to manage client information and other dynamic content.
+## Insert Your API Key
 
-## Features
+1. Open your project folder in VS Code.
+2. Navigate to the `script.js` file.
+3. Find the `API_KEY` variable and replace `PASTE-YOUR-API-KEY` with your actual API key.
 
-- **Responsive Design**: The site is fully responsive and works seamlessly across various devices and screen sizes.
-- **Project Showcase**: A section dedicated to showcasing the projects I've worked on, complete with descriptions, screenshots, and links.
-- **Blog Section**: Regular updates and posts related to technology, cloud computing, and software development.
-- **Contact Form**: A fully functional contact form that stores user data in a MySQL database.
-- **Social Media Integration**: Links to my professional social media profiles for easier connection.
+## Save and Test
 
-## Technologies Used
+1. Save the `script.js` file after adding your API key.
+2. Open `index.html` in your browser to verify that Chatbot is working correctly.
 
-- **Frontend**: HTML5, CSS3, JavaScript, jQuery
-- **Backend**: PHP, MySQL (for future enhancements)
-- **Tools**: Git, GitHub, VSCode
-- **Hosting**: Hosted on a cloud provider with optimization for speed and performance.
+## Customization Tips
 
-## Getting Started
+This chatbot uses the free Gemini API to generate responses to any questions. You can customize it by adding your company information, and the chatbot will respond accordingly.
 
-To get a local copy of this project up and running on your machine, follow these steps:
+Simply update lines 24 and 40 of `script.js` file with the following code:
 
-### Prerequisites
-- PHP >= 7.4
-- MySQL
-- Web server (e.g., Apache, Nginx)
-- Git
+```javascript
+// Line 24
+const chatHistory = [
+  {
+    role: "model",
+    parts: [{ text: `Your company information here` }],
+  },
+];
 
-### Installation
+// Line 40
+chatHistory.push({
+  role: "user",
+  parts: [{ text: `Using the details provided above, please address this query: ${userData.message}` }, ...(userData.file.data ? [{ inline_data: userData.file }] : [])],
+});
+```
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/Jgil20/Portfolio-Site-Jhon-Arzu-Gil.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd Portfolio-Site-Jhon-Arzu-Gil
-    ```
-3. Set up the database:
-    - Create a new MySQL database.
-    - Import the SQL file provided in the `database` folder to set up the necessary tables.
+## Important Information
 
-4. Configure the `.env` file with your database credentials (if applicable).
+This chatbot uses the Gemini beta model, gemini-1.5-flash, which allows more free requests within a shorter timeframe. If you need greater reliability, you can switch to the stable model, gemini-1.5-pro. While the free version of this model has stricter request limits, upgrading to a paid plan will remove these restrictions.
 
-5. Start your local web server and navigate to the site.
+To switch to the gemini-1.5-pro stable model, update the API_URL in the `script.js` file as follows:
+const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro:generateContent?key=${API_KEY}`;
 
-## File Structure
+If you still get an error or get stuck, feel free to message me on Buy Me a Coffee.
+https://buymeacoffee.com/codingnepal
 
-```plaintext
-Portfolio-Site-Jhon-Arzu-Gil/
-├── assets/
-│   ├── css/
-│   ├── img/
-│   ├── js/
-│   └── ...
-├── includes/
-│   ├── header.php
-│   ├── footer.php
-│   └── ...
-├── index.php
-├── about.php
-├── contact.php
-├── blog/
-│   ├── blog1.php
-│   ├── blog2.php
-│   └── ...
-├── README.md
-└── ...
+---
 
-assets/: Contains all static files like CSS, JavaScript, and images.
-includes/: Contains reusable components like the header and footer.
-index.php: The main landing page of the portfolio.
-blog/: Contains individual blog post pages.
-Contact
-For any inquiries, feel free to reach out to me:
-
-Email: Jarzugil20@gmail.com
-LinkedIn: [https://www.linkedin.com/in/jhongil]
-GitHub: [https://github.com/Jgil20]
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+Happy coding!

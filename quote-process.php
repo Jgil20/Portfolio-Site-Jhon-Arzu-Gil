@@ -1,22 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
-// Database credentials
-$host = '127.0.0.1:3306'; // Change if needed
-$db = 'u881526474_Services'; // Replace with your database name
-$user = 'u881526474_Admin'; // Replace with your database username
-$pass = 'Spiderman8085$'; // Replace with your database password
-
-// Create connection
-$conn = new mysqli($host, $user, $pass, $db);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
+include 'config.php';
 // Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
@@ -49,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             // Return a success message
-            echo "<h3>Thank you! Your request has been submitted successfully.</h3>";
+            echo "Thank you! Your request has been submitted successfully.";
         } else {
             echo "Error: " . $stmt->error;
         }

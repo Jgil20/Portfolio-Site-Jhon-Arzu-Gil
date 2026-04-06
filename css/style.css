@@ -358,7 +358,7 @@ nav.navbar.mgsbsnavbar .navbar-nav li.dropdown .dropdown-menu .dropdown-item.act
 	background-image: url("../images/profile/CloudTechnology%20Computing.avif");
 }
 .home-top-banner.banner-2 {
-	background-image: url("../images/profile/computer%20clouds%20Jhon%20Gil.avif");
+	background-image: url("../images/profile/computer%20clouds%20Jho%20Gil.avif");
 }
 
 .background-transparent {
@@ -1660,7 +1660,7 @@ ul.filter > li.active a, ul.filter > li > a:hover,ul.filter > li > a:focus {
 	color: #fff;
 }
 #quotes-section.parallax {
-	background-image: url("../images/background/computer%20clouds%20Jhon%20Gil.avif");
+	background-image: url("../images/background/CloudHacker.jpeg");
 	background-attachment: fixed;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
@@ -3122,3 +3122,12 @@ blockquote {
 .bottomMargin0 {
     margin-bottom: 0;
 }
+.formlabel{
+    padding-left: 50px;
+}
+
+label {
+    display: inline-block;
+    padding-left: 50px; !important;
+}
+

@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare the email
-    $to = "admin@arzugil.com"; // Replace with your email address
+    $to = "jhon@arzugil.com"; // Replace with your email address
     $subject = "New Contact Form Submission from $fname";
     $body = "
     Name: $fname\n
