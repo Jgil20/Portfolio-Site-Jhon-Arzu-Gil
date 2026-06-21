@@ -378,3 +378,521 @@ body.show-emoji-picker em-emoji-picker {
   }
 
 }
+
+/* =========================================================
+   Interactive Site Features - ArzuGil / Cloud Tech Style
+   Add this to the bottom of css/style.css
+========================================================= */
+
+:root {
+  --site-primary: #1391a6;
+  --site-primary-dark: #0f7485;
+  --site-dark: #222;
+  --site-text: #505050;
+  --site-light: #f7fafa;
+  --site-border: #e5e5e5;
+  --site-white: #ffffff;
+  --site-shadow: 0 10px 30px rgba(19, 145, 166, 0.12);
+}
+
+/* Shared interactive section styling */
+.service-quiz,
+#price-calculator,
+#ebookPopup .popup-content,
+.project-card,
+.recommendation-box,
+.case-study-details,
+.appointment-box,
+.interactive-box {
+  background: var(--site-white);
+  border: 1px solid var(--site-border);
+  border-radius: 12px;
+  box-shadow: var(--site-shadow);
+}
+
+/* Service quiz */
+.service-quiz {
+  padding: 50px 35px;
+  margin: 60px auto;
+  max-width: 850px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-quiz::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: var(--site-primary);
+}
+
+.service-quiz h2,
+#price-calculator h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: var(--site-dark);
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.service-quiz p,
+#price-calculator p,
+.recommendation-box p {
+  color: var(--site-text);
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+.service-quiz select,
+#businessGoal {
+  width: 100%;
+  max-width: 550px;
+  height: 52px;
+  padding: 0 18px;
+  border: 1px solid var(--site-border);
+  border-radius: 6px;
+  color: var(--site-text);
+  font-size: 16px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.service-quiz select:focus,
+#businessGoal:focus {
+  border-color: var(--site-primary);
+  box-shadow: 0 0 0 3px rgba(19, 145, 166, 0.12);
+}
+
+/* Buttons */
+.service-quiz button,
+#price-calculator button,
+.project-card button,
+.interactive-btn,
+.btn-primary,
+.recommendation-box .btn {
+  background: var(--site-primary);
+  color: #fff !important;
+  border: 1px solid var(--site-primary);
+  border-radius: 4px;
+  padding: 13px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  letter-spacing: 0.4px;
+}
+
+.service-quiz button:hover,
+#price-calculator button:hover,
+.project-card button:hover,
+.interactive-btn:hover,
+.btn-primary:hover,
+.recommendation-box .btn:hover {
+  background: var(--site-primary-dark);
+  border-color: var(--site-primary-dark);
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(19, 145, 166, 0.25);
+}
+
+/* Recommendation result */
+#quizResult {
+  margin-top: 25px;
+}
+
+.recommendation-box {
+  padding: 30px;
+  margin-top: 25px;
+  border-left: 5px solid var(--site-primary);
+  text-align: left;
+  animation: fadeUp 0.45s ease;
+}
+
+.recommendation-box h3 {
+  color: var(--site-primary);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Price calculator */
+#price-calculator {
+  padding: 50px 35px;
+  margin: 60px auto;
+  max-width: 850px;
+  position: relative;
+  overflow: hidden;
+}
+
+#price-calculator::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background: var(--site-primary);
+}
+
+#price-calculator label {
+  display: block;
+  background: var(--site-light);
+  border: 1px solid var(--site-border);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  color: var(--site-text);
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#price-calculator label:hover {
+  border-color: var(--site-primary);
+  background: #f1fbfd;
+  transform: translateX(4px);
+}
+
+#price-calculator input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: var(--site-primary);
+}
+
+#price-calculator h3 {
+  color: var(--site-dark);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+#totalPrice {
+  color: var(--site-primary);
+  font-weight: 700;
+}
+
+/* Project card and case study */
+.project-card {
+  padding: 25px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(19, 145, 166, 0.18);
+}
+
+.project-card img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.project-card h3 {
+  color: var(--site-dark);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: var(--site-text);
+  margin-bottom: 18px;
+}
+
+.case-study-details {
+  margin-top: 25px;
+  padding: 25px;
+  background: var(--site-light);
+  border-left: 5px solid var(--site-primary);
+  animation: fadeUp 0.4s ease;
+}
+
+.case-study-details h4 {
+  color: var(--site-primary);
+  font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.case-study-details h4:first-child {
+  margin-top: 0;
+}
+
+.case-study-details a {
+  color: var(--site-primary);
+  font-weight: 700;
+}
+
+.case-study-details a:hover {
+  color: var(--site-primary-dark);
+}
+
+/* eBook popup */
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.68);
+  z-index: 99999;
+  padding: 20px;
+}
+
+#ebookPopup .popup-content {
+  max-width: 520px;
+  margin: 10vh auto;
+  padding: 40px 35px;
+  position: relative;
+  text-align: center;
+  animation: popupZoom 0.35s ease;
+}
+
+#ebookPopup .popup-content button {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: transparent;
+  color: var(--site-dark);
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#ebookPopup .popup-content h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  color: var(--site-dark);
+  margin-bottom: 15px;
+}
+
+#ebookPopup .popup-content p {
+  color: var(--site-text);
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+
+/* Chatbot quick buttons */
+.quick-chat-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid var(--site-border);
+  background: #f8fbfc;
+}
+
+.quick-chat-actions button {
+  background: #fff;
+  color: var(--site-primary);
+  border: 1px solid rgba(19, 145, 166, 0.35);
+  border-radius: 30px;
+  padding: 8px 13px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.quick-chat-actions button:hover {
+  background: var(--site-primary);
+  color: #fff;
+  border-color: var(--site-primary);
+}
+
+/* Skill bars */
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill p {
+  color: var(--site-dark);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.skill-bar {
+  width: 100%;
+  background: #e9eeee;
+  height: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  width: 0;
+  height: 100%;
+  background: var(--site-primary);
+  border-radius: 20px;
+  transition: width 1.2s ease-in-out;
+}
+
+/* Scroll reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Blog reading progress bar */
+#readingProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0%;
+  background: var(--site-primary);
+  z-index: 999999;
+  transition: width 0.1s ease;
+}
+
+/* Appointment form styling */
+.appointment-box,
+#appointment-form {
+  background: var(--site-white);
+  border: 1px solid var(--site-border);
+  border-radius: 12px;
+  box-shadow: var(--site-shadow);
+  padding: 40px 30px;
+  margin: 50px auto;
+  max-width: 850px;
+}
+
+.appointment-box input,
+.appointment-box select,
+.appointment-box textarea,
+#appointment-form input,
+#appointment-form select,
+#appointment-form textarea {
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--site-border);
+  border-radius: 6px;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  color: var(--site-text);
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.appointment-box textarea,
+#appointment-form textarea {
+  height: 130px;
+  padding-top: 14px;
+  resize: vertical;
+}
+
+.appointment-box input:focus,
+.appointment-box select:focus,
+.appointment-box textarea:focus,
+#appointment-form input:focus,
+#appointment-form select:focus,
+#appointment-form textarea:focus {
+  border-color: var(--site-primary);
+  box-shadow: 0 0 0 3px rgba(19, 145, 166, 0.12);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popupZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 767px) {
+  .service-quiz,
+  #price-calculator,
+  .appointment-box,
+  #appointment-form {
+    padding: 35px 20px;
+    margin: 40px 15px;
+  }
+
+  .service-quiz h2,
+  #price-calculator h2,
+  #ebookPopup .popup-content h2 {
+    font-size: 26px;
+  }
+
+  .recommendation-box,
+  .case-study-details {
+    padding: 22px;
+  }
+
+  .recommendation-box h3 {
+    font-size: 21px;
+  }
+
+  #ebookPopup .popup-content {
+    margin: 8vh auto;
+    padding: 35px 22px;
+  }
+
+  .quick-chat-actions {
+    justify-content: center;
+  }
+
+  .quick-chat-actions button {
+    font-size: 12px;
+    padding: 7px 11px;
+  }
+  .comment-avatar-placeholder {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #1391a6;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.comment-content .comment-meta span {
+    color: #777;
+    font-size: 13px;
+}
+
+.commentlist .comment-wrap {
+    display: flex;
+    gap: 18px;
+}
+
+.comment-author-avatar {
+    flex: 0 0 60px;
+}
+
+.comment-content {
+    flex: 1;
+}
+}
