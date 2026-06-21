@@ -1,0 +1,16 @@
+QUIZ APP - CLOUD + WEB DEVELOPER QUESTIONS
+
+This version includes 20 entry-level cloud and web developer questions in questions.json.
+
+Important:
+1. Replace the entire old Quiz App folder with this new folder.
+2. Do not keep two copies with the same folder name in MAMP/htdocs.
+3. In Chrome, hard refresh: Cmd + Shift + R on Mac.
+4. The fetch URL now uses a cache-buster: questions.json?v=cloud-web-questions-2026.
+
+MAMP:
+/Applications/MAMP/htdocs/Quiz App/
+http://localhost:8888/Quiz%20App/
+
+VS Code Live Server:
+Right-click index.html and choose Open with Live Server.

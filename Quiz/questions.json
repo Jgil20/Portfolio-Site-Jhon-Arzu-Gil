@@ -1,0 +1,162 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "choice1": "Hyper Text Markup Language",
+    "choice2": "High Tech Machine Language",
+    "choice3": "Hyper Transfer Markup Logic",
+    "choice4": "Home Tool Markup Language",
+    "answer": 1
+  },
+  {
+    "question": "Which language is mainly used to style web pages?",
+    "choice1": "Python",
+    "choice2": "CSS",
+    "choice3": "SQL",
+    "choice4": "PHP",
+    "answer": 2
+  },
+  {
+    "question": "Which JavaScript method is commonly used to select an element by ID?",
+    "choice1": "getElementById()",
+    "choice2": "queryDatabase()",
+    "choice3": "selectClass()",
+    "choice4": "findHTML()",
+    "answer": 1
+  },
+  {
+    "question": "What does CSS stand for?",
+    "choice1": "Computer Style System",
+    "choice2": "Creative Style Sheet",
+    "choice3": "Cascading Style Sheets",
+    "choice4": "Cloud Styling Syntax",
+    "answer": 3
+  },
+  {
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "choice1": "<link>",
+    "choice2": "<a>",
+    "choice3": "<href>",
+    "choice4": "<url>",
+    "answer": 2
+  },
+  {
+    "question": "What is the main purpose of JavaScript in web development?",
+    "choice1": "To add interactivity to web pages",
+    "choice2": "To store server backups",
+    "choice3": "To replace databases",
+    "choice4": "To configure DNS records only",
+    "answer": 1
+  },
+  {
+    "question": "Which protocol is commonly used to load secure websites?",
+    "choice1": "FTP",
+    "choice2": "HTTP",
+    "choice3": "HTTPS",
+    "choice4": "SMTP",
+    "answer": 3
+  },
+  {
+    "question": "What does API stand for?",
+    "choice1": "Application Programming Interface",
+    "choice2": "Advanced Program Internet",
+    "choice3": "Automated Page Integration",
+    "choice4": "Application Process Index",
+    "answer": 1
+  },
+  {
+    "question": "Which database language is used to query relational databases?",
+    "choice1": "HTML",
+    "choice2": "CSS",
+    "choice3": "SQL",
+    "choice4": "XML",
+    "answer": 3
+  },
+  {
+    "question": "What is Git mainly used for?",
+    "choice1": "Image editing",
+    "choice2": "Version control",
+    "choice3": "Cloud billing",
+    "choice4": "Web hosting only",
+    "answer": 2
+  },
+  {
+    "question": "What is cloud computing?",
+    "choice1": "Running software and storing data on remote servers over the internet",
+    "choice2": "Only building websites with HTML",
+    "choice3": "A type of local hard drive",
+    "choice4": "A desktop operating system",
+    "answer": 1
+  },
+  {
+    "question": "Which of the following is a major cloud provider?",
+    "choice1": "Photoshop",
+    "choice2": "AWS",
+    "choice3": "Bootstrap",
+    "choice4": "MySQL Workbench",
+    "answer": 2
+  },
+  {
+    "question": "What does IaaS stand for?",
+    "choice1": "Internet as a Service",
+    "choice2": "Infrastructure as a Service",
+    "choice3": "Integration as a Software",
+    "choice4": "Interface as a System",
+    "answer": 2
+  },
+  {
+    "question": "Which cloud service lets developers run virtual servers?",
+    "choice1": "Compute service",
+    "choice2": "Text editor",
+    "choice3": "CSS framework",
+    "choice4": "Browser cache",
+    "answer": 1
+  },
+  {
+    "question": "What is the purpose of cloud storage?",
+    "choice1": "To store files and data on remote cloud systems",
+    "choice2": "To design HTML buttons",
+    "choice3": "To write JavaScript loops",
+    "choice4": "To delete databases",
+    "answer": 1
+  },
+  {
+    "question": "Which AWS service is commonly used for object storage?",
+    "choice1": "Amazon EC2",
+    "choice2": "Amazon S3",
+    "choice3": "Amazon Route 53",
+    "choice4": "Amazon Lambda",
+    "answer": 2
+  },
+  {
+    "question": "What is scalability in cloud computing?",
+    "choice1": "The ability to increase or decrease resources based on demand",
+    "choice2": "The process of changing font sizes",
+    "choice3": "The ability to remove all security",
+    "choice4": "The process of editing HTML comments",
+    "answer": 1
+  },
+  {
+    "question": "What does CDN stand for?",
+    "choice1": "Cloud Data Name",
+    "choice2": "Content Delivery Network",
+    "choice3": "Code Design Node",
+    "choice4": "Central Database Number",
+    "answer": 2
+  },
+  {
+    "question": "Why is responsive design important?",
+    "choice1": "It helps websites work well on different screen sizes",
+    "choice2": "It prevents databases from running",
+    "choice3": "It replaces cloud hosting",
+    "choice4": "It removes the need for CSS",
+    "answer": 1
+  },
+  {
+    "question": "What is a common reason to use environment variables?",
+    "choice1": "To store sensitive configuration values outside the source code",
+    "choice2": "To make images larger",
+    "choice3": "To replace HTML tags",
+    "choice4": "To turn off internet access",
+    "answer": 1
+  }
+]

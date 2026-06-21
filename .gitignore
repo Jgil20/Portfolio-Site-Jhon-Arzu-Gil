@@ -1,0 +1,8 @@
+
+# Large downloadable PDF books
+assets/books/*.pdf
+
+includes/config.php
+includes/database.php
+.env
+.env.*

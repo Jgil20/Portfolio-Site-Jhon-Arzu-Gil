@@ -50,6 +50,32 @@ document.addEventListener("touchstart", function() {},false);
 				}
 	});
 	
+	$('.certification-carousel').owlCarousel({
+	loop: true,
+	margin: 30,
+	nav: true,
+	dots: true,
+	autoplay: true,
+	autoplayTimeout: 3000,
+	responsive: {
+		0: {
+			items: 1
+		},
+		576: {
+			items: 1
+		},
+		768: {
+			items: 2
+		},
+		992: {
+			items: 3
+		},
+		1200: {
+			items: 3
+		}
+	}
+});
+	
 	//Testimonial Carousel single column
 	$('.testimonial-single .owl-carousel').owlCarousel({
 	   items: 1,
