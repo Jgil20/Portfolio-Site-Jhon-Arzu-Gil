@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <script>
+        // Ignore this in your implementation
+        window.isMbscDemo = true;
+    </script>
+
+    <title>Timezones</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+
+    <!-- Mobiscroll JS and CSS Includes -->
+    <link rel="stylesheet" href="css/mobiscroll.javascript.min.css">
+    <script src="js/mobiscroll.javascript.min.js"></script>
+
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body,
+    html {
+        height: 100%;
+    }
+
+    </style>
+
+</head>
+<body>
+
+<div mbsc-page class="demo-setting-the-timezone">
+  <div style="height:100%">
+      <div id="demo-showing-events-timezone"></div>
+  </div>
+</div>
+
+<script>
+    mobiscroll.setOptions({
+        theme: 'ios',
+        locale: mobiscroll.localeEn
+    });
+
+    mobiscroll.momentTimezone.moment = moment;
+    
+    mobiscroll.eventcalendar('#demo-showing-events-timezone', {
+        timezonePlugin: mobiscroll.momentTimezone,  // More info about timezonePlugin: https://docs.mobiscroll.com/5-17-2/javascript/eventcalendar#opt-timezonePlugin
+        dataTimezone: 'utc',                        // More info about dataTimezone: https://docs.mobiscroll.com/5-17-2/javascript/eventcalendar#opt-dataTimezone
+        displayTimezone: 'local',                   // More info about displayTimezone: https://docs.mobiscroll.com/5-17-2/javascript/eventcalendar#opt-displayTimezone
+        view: {                                     // More info about view: https://docs.mobiscroll.com/5-17-2/javascript/eventcalendar#opt-view
+            calendar: {
+                popover: true,
+                type: 'month'
+            },
+        },
+        data: [{                                    // More info about data: https://docs.mobiscroll.com/5-17-2/javascript/eventcalendar#opt-data
+            start: '2022-08-02T07:00',
+            end: '2022-08-02T09:00',
+            title: 'Stakeholder mtg.',
+            color: '#d64646'
+        }, {
+            start: '2022-08-05T18:00',
+            end: '2022-08-05T19:30',
+            title: 'Wrapup mtg.',
+            color: '#ecbc72'
+        }, {
+            start: '2022-08-02T14:00',
+            end: '2022-08-02T18:00',
+            title: 'Business of Software Conference',
+            color: '#ff6d42'
+        }, {
+            start: '2022-08-03T20:00',
+            end: '2022-08-03T21:50',
+            title: 'Product Team mtg.',
+            color: '#913aa7'
+        }, {
+            start: '2022-08-01T13:00',
+            end: '2022-08-01T15:00',
+            title: 'Decision Making mtg.',
+            color: '#46c3d6'
+        }, {
+            start: '2022-08-03T13:00',
+            end: '2022-08-03T14:00',
+            title: 'Quick mtg. with Martin',
+            color: '#50b166'
+        }, {
+            start: '2022-08-05T12:00',
+            end: '2022-08-05T16:00',
+            color: '#5bb7c5',
+            title: 'Team-Building'
+        }]
+    });
+</script>
+
+</body>
+</html>
